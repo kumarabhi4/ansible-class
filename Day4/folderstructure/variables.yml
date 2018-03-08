@@ -1,0 +1,12 @@
+---
+
+- name: Demonstrates use of variables stored in external file
+  hosts: all
+  vars_files:
+    - myvar_file
+    - secondfile
+  tasks:
+    - name: Print the values of variables stored in external file
+      debug: msg=" {{provisioner_tool}} {{automation_tool}}" 
+
+...
