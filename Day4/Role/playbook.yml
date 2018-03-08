@@ -1,0 +1,5 @@
+---
+- name: Demonstrates use of Ansible role
+  hosts: all
+  roles:
+    - nginx

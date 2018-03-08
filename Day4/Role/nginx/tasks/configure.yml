@@ -1,0 +1,23 @@
+- name: Configure nginx in Ubuntu
+  copy: src=nginx_ubuntu.conf dest=/etc/nginx/nginx.conf
+  when: ( ansible_distribution == "Ubuntu" )
+  notify:
+     - Restart nginx server
+
+- name: Configure nginx default in Ubuntu
+  copy: src=default_ubuntu dest=/etc/nginx/sites-available/default
+  when: ( ansible_distribution == "Ubuntu" )
+  notify:
+     - Restart nginx server
+
+- name: Configure nginx in CentOS 
+  copy: src=nginx_centos.conf dest=/etc/nginx/nginx.conf
+  when: ( ansible_distribution == "CentOS" )
+  notify:
+     - Restart nginx server
+
+- name: Configure nginx default in CentOS 
+  copy: src=default_centos.conf dest=/etc/nginx/conf.d/default.conf
+  when: ( ansible_distribution == "CentOS" )
+  notify:
+     - Restart nginx server

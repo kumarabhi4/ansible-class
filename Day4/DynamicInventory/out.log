@@ -1,0 +1,21 @@
+ansible-playbook 2.4.2.0
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = [u'/root/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, Aug  4 2017, 00:39:18) [GCC 4.8.5 20150623 (Red Hat 4.8.5-16)]
+Using /etc/ansible/ansible.cfg as config file
+setting up inventory plugins
+Parsed /etc/ansible/hosts inventory source with ini plugin
+ [WARNING]: Could not match supplied host pattern, ignoring: all
+ [WARNING]: provided hosts list is empty, only localhost is available
+Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/site-packages/ansible/plugins/callback/__init__.pyc
+
+PLAYBOOK: ping.yml ********************************************************************
+1 plays in ping.yml
+
+PLAY [all] ****************************************************************************
+skipping: no hosts matched
+
+PLAY RECAP ****************************************************************************
+
